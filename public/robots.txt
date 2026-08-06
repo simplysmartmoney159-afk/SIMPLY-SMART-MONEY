@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://simplysmart-money.vercel.app/sitemap.xml
+
+# Disallow crawling of specific paths if needed
+# Disallow: /admin
+# Disallow: /private
