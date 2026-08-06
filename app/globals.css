@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a2a4a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.8;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4a6bb3;
+}
+
+/* Blog Post Styles */
+.blog-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  color: #1a2a4a;
+}
+
+.blog-content p {
+  margin-bottom: 1.5rem;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
+.blog-content blockquote {
+  border-left: 4px solid #4a6bb3;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #2d4074;
+}
+
+/* Responsive Images */
+.blog-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #4a6bb3;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #3d5596;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #4a6bb3;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #4a6bb3;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background-color: #4a6bb3;
+  color: white;
+}
+
+/* Card Styles */
+.card {
+  border: 1px solid #dce4ef;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(74, 107, 179, 0.1);
+  transform: translateY(-4px);
+}
