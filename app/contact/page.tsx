@@ -23,7 +23,6 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, you would send this data to your backend
     console.log('Form submitted:', formData);
     setSubmitted(true);
     setFormData({ name: '', email: '', subject: '', message: '' });
@@ -38,7 +37,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl text-navy-700">
-            Have a question or suggestion? We'd love to hear from you.
+            Have a question or suggestion? We would love to hear from you.
           </p>
         </div>
       </div>
@@ -55,12 +54,7 @@ export default function ContactPage() {
                 <h3 className="font-playfair font-bold text-navy-900 mb-2">
                   Email
                 </h3>
-                
-                  href="mailto:hello@simplysmart.com"
-                  className="text-navy-600 hover:text-navy-900"
-                >
-                  hello@simplysmart.com
-                </a>
+                <p className="text-navy-600">hello@simplysmart.com</p>
               </div>
 
               <div>
@@ -74,13 +68,13 @@ export default function ContactPage() {
 
               <div>
                 <h3 className="font-playfair font-bold text-navy-900 mb-2">
-                  What We're Looking For
+                  What We are Looking For
                 </h3>
                 <ul className="space-y-2 text-navy-700">
-                  <li>• Collaboration opportunities</li>
-                  <li>• Guest post pitches</li>
-                  <li>• Product recommendations</li>
-                  <li>• General feedback</li>
+                  <li>Collaboration opportunities</li>
+                  <li>Guest post pitches</li>
+                  <li>Product recommendations</li>
+                  <li>General feedback</li>
                 </ul>
               </div>
             </div>
@@ -174,7 +168,7 @@ export default function ContactPage() {
 
               {submitted && (
                 <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg">
-                  Thank you for your message! We'll be in touch soon.
+                  Thank you for your message! We will be in touch soon.
                 </div>
               )}
             </form>
